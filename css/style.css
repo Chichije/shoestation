@@ -393,9 +393,9 @@ img {
 }
 
 a {
-  background-color: transparent;
-  text-decoration: none;
-  color: rgb(var(--color-foreground));
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: rgb(var(--color-foreground)) !important;
 }
 
 li {
@@ -416,11 +416,11 @@ li {
 }
 
 .container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-  max-width: 1598px;
+  margin: 0 auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  width: 100% !important;
+  max-width: 1598px !important;
 }
 
 .row {
