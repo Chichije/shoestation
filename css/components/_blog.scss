@@ -24,14 +24,16 @@
     font-weight: 500;
     padding-bottom: 10px;
   }
-  .blog-box__date {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
+ 
   .blog-box__description {
     padding-top: 10px;
   }
+}
+
+.blog-box__date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .blog-right {
@@ -59,17 +61,23 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid var(--color-primary);
-  background-color: #E8E8E8;
+  border: 1px solid #FFB703;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
   cursor: pointer;
   &:hover {
-    background-color: #B5B5B5;
+    background-color: #FFB703;
   }
   &:first-child {
-    background-color: #B5B5B5;
+    color: #ffffff;
+    background-color: var(--color-primary);
   }
+}
+
+.blog-right__img {
+  max-width: 142px;
+  width: 100%;
 }

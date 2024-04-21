@@ -73,11 +73,11 @@
   display: flex;
 }
 .header__menu li {
-  font-size: 22px;
+  font-size: 20px;
   padding: 21px 10px;
 }
 .header__menu .header__menu-primary {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -186,7 +186,7 @@
   display: block;
 }
 .product:hover {
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 .product:hover .product__box-img {
@@ -231,13 +231,14 @@
   font-weight: 500;
   padding-bottom: 10px;
 }
-.blog-box .blog-box__date {
+.blog-box .blog-box__description {
+  padding-top: 10px;
+}
+
+.blog-box__date {
   display: flex;
   gap: 10px;
   align-items: center;
-}
-.blog-box .blog-box__description {
-  padding-top: 10px;
 }
 
 .blog-right {
@@ -264,8 +265,8 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid var(--color-primary);
-  background-color: #E8E8E8;
+  border: 1px solid #FFB703;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,10 +274,71 @@
   cursor: pointer;
 }
 .button-paginate:hover {
-  background-color: #B5B5B5;
+  background-color: #FFB703;
 }
 .button-paginate:first-child {
-  background-color: #B5B5B5;
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
+
+.blog-right__img {
+  max-width: 142px;
+  width: 100%;
+}
+
+.introduce {
+  max-width: 990px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  padding-top: 30px;
+}
+
+.introduce__title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.introduce__content {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 26px;
+  padding-bottom: 10px;
+}
+
+.introduce__description {
+  padding-bottom: 4px;
+  font-size: 20px;
+}
+
+.introduce__list {
+  padding-left: 32px;
+  font-size: 20px;
+}
+.introduce__list li {
+  list-style: unset;
+}
+
+.blidetail_content {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.blog-detail__content {
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.blog-detail__image {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-detail__br-pb {
+  padding-bottom: 10px;
+  display: block;
+  padding-top: 30px;
 }
 
 * {
@@ -308,6 +370,7 @@ body {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -345,6 +408,11 @@ li {
 
 .section {
   padding-top: 120px;
+}
+
+.pb-10 {
+  display: block;
+  padding-bottom: 10px;
 }
 
 .container {
