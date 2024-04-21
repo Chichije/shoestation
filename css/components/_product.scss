@@ -25,7 +25,7 @@
     align-items: center;
     .product__price-now {
       font-weight: 500;
-      color: var(--color-secondary);
+      color: var(--color-red);
     }
     .product__price-del {
       text-decoration: line-through;
@@ -38,9 +38,9 @@
       align-items: center;
       padding: 5px 14px;
       border-radius: 5px;
-      color: var(--color-secondary);
+      color: var(--color-red);
       background-color: #ffdcdc;
-      border: 1px solid var(--color-secondary);
+      border: 1px solid var(--color-red);
     }
   }
 }
@@ -58,5 +58,231 @@
       transform: scale(0.9);
     }
   }
-  
+}
+
+// checkbox
+.product-checkbox {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-checkbox__content {
+  gap: 10px;
+  align-items: center;
+}
+
+.product-checkbox__input {
+  border: 2px solid;
+  width: 15px;
+}
+
+.checkbox {
+  padding-bottom: 16px;
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    font-size: 15px;
+    content: "\f00c";
+    color: #fff;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: var(--color-secondary);
+    border: 1px var(--color-secondary);
+  }
+
+  input[type="checkbox"]:checked::after {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.product-sidebar {
+  padding-right: 38px;
+  .product-sidebar__title {
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-left: 28px;
+  }
+  .product-sidebar__box {
+    padding: 30px 28px;
+    border-top: 1px solid #cfcfcf;
+    .product-sidebar__label {
+      font-weight: 500;
+      font-size: 20px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.checkbox--size {
+  position: relative;
+  padding-bottom: 0px;
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 42px;
+    height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+  }
+  input[type="checkbox"]::after {
+    font-weight: 700;
+    font-size: 15px;
+    content: "";
+    color: #fff;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .product-checkbox__item {
+    position: absolute;
+    top: 0;
+    transform: translateX(10px);
+  }
+}
+
+.product-sidebar__flex {
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.checkbox--color {
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 33px;
+    height: 33px;
+    background-color: var(--color-red);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: unset;
+  }
+  input[type="checkbox"]::after {
+    content: "";
+  }
+  input[type="checkbox"]:checked {
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-background);
+    z-index: -1;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.checkbox--color-red {
+  input[type="checkbox"] {
+    background-color: var(--color-red);
+  }
+  input[type="checkbox"]:checked::after {
+    opacity: 1;
+    display: block;
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+.checkbox--color-black {
+  input[type="checkbox"] {
+    background-color: black;
+  }
+  input[type="checkbox"]:checked::after {
+    opacity: 1;
+    display: block;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+.checkbox--color-white {
+  input[type="checkbox"] {
+    background-color: white;
+    border: 1px solid #000;
+  }
+  input[type="checkbox"]:checked::after {
+    opacity: 1;
+    display: block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+.range {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.range__select {
+  padding: 4px 15px;
+  font-size: 18px;
+  font-family: roboto;
+  width: 243px;
+  border-radius: 3px;
+}
+
+// group button
+
+.group-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 40px;
+}
+
+.group-button__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:nth-child(2) {
+    background-color: #000;
+    color: white;
+  }
+  &:hover {
+    background-color: #000;
+    color: white;
+    svg {
+      path {
+        fill :#fff
+      }
+    }
+  }
 }

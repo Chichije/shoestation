@@ -11,6 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
+      <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <title>Shoestation</title>
 </head>
 
@@ -131,73 +133,454 @@
       </div>
     </div>
   </header>
+  <!-- breadcrumb -->
   <section>
-    <a href="#">
-      <img src="./images/banner.jpg" alt="banner">
-    </a>
-  </section>
-  <!-- san pham da xem gan day -->
-  <section class="section">
     <div class="container">
-      <h2 class="title">SẢN PHẨM ĐÃ XEM GẦN ĐÂY</h2>
+      <div class="breadcrumb">
+        <span>Trang chủ/</span>
+        <span class="breadcrumb__title">Sản phẩm</span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- san pham  -->
+  <section>
+    <div class="container">
       <div class="row">
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">2.929.000đ</span>
-                  <span class="product__price-del">1.464.500đ</span>
+        <div class="col " style="--col-xs: 12; --col-md: 12; --col-lg: 3; --col-xl: 3">
+          <div class="product-sidebar">
+            <h3 class="product-sidebar__title">Bộ lọc</h3>
+          <div class="product-sidebar__box">
+            <div class="product-sidebar__label">Giới tính</div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Nam</p>
                 </div>
-                <div class="product__sale">-50%</div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Nữ</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Unisex</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="product-sidebar__box">
+            <div class="product-sidebar__label">Kích thước</div>
+            <div class="product-sidebar__flex d-flex">
+              <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">34</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">35</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">36</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">34</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">35</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">36</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">34</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">35</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">36</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">34</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">35</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox checkbox--size">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">36</p>
+                </div>
+              </label>
+            </div>
+            </div>            
+          </div>
+          <div class="product-sidebar__box">
+            <div class="product-sidebar__label">Màu sắc</div>
+            <div class="product-sidebar__flex d-flex">
+              <div class="checkbox checkbox--color checkbox--color-red">
+                <label class="product-checkbox d-flex">
+                  <div class="product-checkbox__content d-flex ">
+                    <input type="checkbox" class="product-checkbox__input">
+                  </div>
+                </label>
+              </div>
+              <div class="checkbox checkbox--color checkbox--color-black">
+                <label class="product-checkbox d-flex">
+                  <div class="product-checkbox__content d-flex ">
+                    <input type="checkbox" class="product-checkbox__input">
+                  </div>
+                </label>
+              </div>
+              <div class="checkbox checkbox--color checkbox--color-white">
+                <label class="product-checkbox d-flex">
+                  <div class="product-checkbox__content d-flex ">
+                    <input type="checkbox" class="product-checkbox__input">
+                  </div>
+                </label>
               </div>
             </div>
-          </a>
+            
+          </div>
+          <div class="product-sidebar__box">
+            <div class="product-sidebar__label">Giá</div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Dưới 500,000đ</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Từ 500,000đ - 1,000,000đ</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Từ 1,000,000đ - 1,500,000đ</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Từ 1,500,000đ - 2,000,000đ</p>
+                </div>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label class="product-checkbox d-flex">
+                <div class="product-checkbox__content d-flex ">
+                  <input type="checkbox" class="product-checkbox__input">
+                  <p class="product-checkbox__item">Trên 2,000,000đ</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          </div>          
         </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product2.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
+        <div class="col" style="--col-xs: 12; --col-md: 12; --col-lg: 9; --col-xl: 9">
+          <div class="range">
+            <select class="range__select" name="list" id="">
+            <option value="name">Mặc định</option>            <option value="name">Từ a-z</option>
+          </select>
+          </div>          
+          <div class="row">
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+    
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <div>
+                      <span class="product__price-now">1.929.000đ</span>
+                      <span class="product__price-del">1.929.000đ</span>
+                    </div>
+                    <div class="product__sale">-50%</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product2.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <span class="product__price-now">1.929.000đ</span>
+                    <span class="product__price-del">1.929.000đ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product3.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+    
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <div>
+                      <span class="product__price-now">1.929.000đ</span>
+                      <span class="product__price-del">1.929.000đ</span>
+                    </div>
+                    <div class="product__sale">-50%</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product4.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <span class="product__price-now">1.929.000đ</span>
+                    <span class="product__price-del">1.929.000đ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product5.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+    
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <div>
+                      <span class="product__price-now">1.929.000đ</span>
+                      <span class="product__price-del">1.929.000đ</span>
+                    </div>
+                    <div class="product__sale">-50%</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product6.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <span class="product__price-now">1.929.000đ</span>
+                    <span class="product__price-del">1.929.000đ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product7.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+    
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <div>
+                      <span class="product__price-now">1.929.000đ</span>
+                      <span class="product__price-del">1.929.000đ</span>
+                    </div>
+                    <div class="product__sale">-50%</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 4">
+              <a href="#" class="product">
+                <div class="product__box-img">
+                  <img src="./images/product8.jpg" alt="product">
+    
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                    <path
+                      d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
+                      fill="#001F3F" />
+                  </svg>
+                </div>
+                <div class="product__content">
+                  <div class="product__name">Nike Airforce 1’07</div>
+                  <div class="product__star">
+                    <img src="./images/star.png" alt="star">
+                  </div>
+                  <div class="product__price">
+                    <span class="product__price-now">1.929.000đ</span>
+                    <span class="product__price-del">1.929.000đ</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="group-button">
+            <div class="group-button__item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <mask id="mask0_4003_47665" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                  <rect width="16" height="16" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_4003_47665)">
+                  <path d="M6.39357 8.16166L11.4154 13.1835C11.5478 13.3159 11.6124 13.4719 11.609 13.6514C11.6055 13.8309 11.5376 13.9869 11.4051 14.1193C11.2726 14.2518 11.1167 14.3181 10.9372 14.3181C10.7577 14.3181 10.6017 14.2518 10.4692 14.1193L5.35513 9.0155C5.2346 8.89499 5.14528 8.75995 5.08717 8.61038C5.02906 8.4608 5 8.31123 5 8.16166C5 8.0121 5.02906 7.86252 5.08717 7.71295C5.14529 7.56338 5.23461 7.42834 5.35513 7.30783L10.4692 2.19373C10.6017 2.06125 10.7594 1.99672 10.9423 2.00013C11.1252 2.00355 11.2829 2.0715 11.4154 2.20398C11.5478 2.33646 11.6141 2.49243 11.6141 2.67191C11.6141 2.8514 11.5478 3.00738 11.4154 3.13986L6.39357 8.16166Z" fill="#001F3F"/>
+                </g>
               </svg>
             </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
+            <div class="group-button__item">1</div>            <div class="group-button__item">2</div>
+            <div class="group-button__item">3</div>
+
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- san pham ban -->
-  <section class="section">
+  <section class="section" style="padding-bottom: 120px;">
     <div class="container">
-      <h2 class="title">SẢN PHẨM BÁN CHẠY</h2>
+      <h2 class="title">SẢN PHẨM ĐÃ XEM GẦN ĐÂY</h2>
       <div class="row">
         <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
           <a href="#" class="product">
@@ -402,331 +785,7 @@
       </div>
     </div>
   </section>
-  <!-- banner -->
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col" style="--col-xs: 12; --col-md: 6; --col-lg: 6; --col-xl: 6">
-          <img src="./images/banner1.jpg" alt="banner">
-        </div>
-        <div class="col" style="--col-xs: 12; --col-md: 6; --col-lg: 6; --col-xl: 6">
-          <img src="./images/banner2.jpg" alt="banner">
-        </div>
-        <div class="col" style="--col-xs: 12; --col-md: 12; --col-lg: 12; --col-xl: 12">
-          <img src="./images/banner3.jpg" alt="banner">
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- san pham moi -->
-  <section class="section">
-    <div class="container">
-      <h2 class="title">SẢN PHẨM MỚI</h2>
-      <div class="row">
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product9.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product10.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product11.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product12.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product13.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product14.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product15.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product16.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product2.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product3.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product4.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <span class="product__price-now">1.929.000đ</span>
-                <span class="product__price-del">1.929.000đ</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="--col-xs: 6; --col-md: 4; --col-lg: 3; --col-xl: 3">
-          <a href="#" class="product">
-            <div class="product__box-img">
-              <img src="./images/product5.jpg" alt="product">
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                <path
-                  d="M12 22.4086L10.6202 21.1682C8.54808 19.2884 6.83454 17.673 5.47956 16.3221C4.1246 14.9711 3.0509 13.7688 2.25844 12.7151C1.46596 11.6614 0.912271 10.7003 0.597375 9.83169C0.282458 8.9631 0.125 8.0817 0.125 7.18747C0.125 5.41345 0.723156 3.92828 1.91947 2.73197C3.11578 1.53566 4.60095 0.9375 6.37497 0.9375C7.46632 0.9375 8.49757 1.19272 9.46872 1.70316C10.4399 2.21357 11.2836 2.94554 12 3.89906C12.7163 2.94554 13.5601 2.21357 14.5312 1.70316C15.5024 1.19272 16.5336 0.9375 17.625 0.9375C19.399 0.9375 20.8842 1.53566 22.0805 2.73197C23.2768 3.92828 23.8749 5.41345 23.8749 7.18747C23.8749 8.0817 23.7175 8.9631 23.4026 9.83169C23.0877 10.7003 22.534 11.6614 21.7415 12.7151C20.949 13.7688 19.8773 14.9711 18.5264 16.3221C17.1754 17.673 15.4599 19.2884 13.3798 21.1682L12 22.4086ZM12 19.875C14 18.0753 15.6458 16.5328 16.9375 15.2476C18.2291 13.9623 19.25 12.8457 20 11.8978C20.75 10.9499 21.2708 10.1081 21.5625 9.37256C21.8541 8.63698 22 7.90862 22 7.18747C22 5.93747 21.5833 4.8958 20.75 4.06247C19.9166 3.22914 18.875 2.81247 17.625 2.81247C16.6378 2.81247 15.7255 3.09252 14.8882 3.65263C14.0509 4.21271 13.3878 4.99196 12.899 5.99038H11.1009C10.6041 4.98396 9.93908 4.2027 9.10575 3.6466C8.27242 3.09051 7.36216 2.81247 6.37497 2.81247C5.13299 2.81247 4.09332 3.22914 3.25597 4.06247C2.41864 4.8958 1.99997 5.93747 1.99997 7.18747C1.99997 7.90862 2.1458 8.63698 2.43747 9.37256C2.72914 10.1081 3.24997 10.9499 3.99997 11.8978C4.74997 12.8457 5.7708 13.9603 7.06247 15.2416C8.35414 16.5228 9.99997 18.0673 12 19.875Z"
-                  fill="#001F3F" />
-              </svg>
-
-            </div>
-            <div class="product__content">
-              <div class="product__name">Nike Airforce 1’07</div>
-              <div class="product__star">
-                <img src="./images/star.png" alt="star">
-              </div>
-              <div class="product__price">
-                <div>
-                  <span class="product__price-now">1.929.000đ</span>
-                  <span class="product__price-del">1.929.000đ</span>
-                </div>
-                <div class="product__sale">-50%</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!-- footer -->
   <footer class="section-footer">
     <div class="container">
