@@ -1,0 +1,35 @@
+.success-order {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 300px;
+}
+
+.section_title-success {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.btn-success {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.btn_view-order {
+    width: 198px;
+    background-color: white;
+    border: 1px solid var(--color-primary);
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.btn_continue-order {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+}

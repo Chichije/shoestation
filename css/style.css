@@ -300,7 +300,8 @@
 
 .product-sidebar__flex {
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
+  width: 284px;
 }
 
 .checkbox--color input[type=checkbox] {
@@ -365,6 +366,114 @@
   border-radius: 50%;
 }
 
+.checkbox--color-beige input[type=checkbox] {
+  background-color: #FFE2C0;
+}
+.checkbox--color-beige input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #FFE2C0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-blue input[type=checkbox] {
+  background-color: #1790C8;
+}
+.checkbox--color-blue input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #1790C8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-pink input[type=checkbox] {
+  background-color: #F0728F;
+}
+.checkbox--color-pink input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #F0728F;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-purple input[type=checkbox] {
+  background-color: #8D429F;
+}
+.checkbox--color-purple input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #8D429F;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-brown input[type=checkbox] {
+  background-color: #825D41;
+}
+.checkbox--color-brown input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #825D41;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-green input[type=checkbox] {
+  background-color: #22C55E;
+}
+.checkbox--color-green input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #22C55E;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-orange input[type=checkbox] {
+  background-color: #FF8A00;
+}
+.checkbox--color-orange input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #F8A00E;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-navy input[type=checkbox] {
+  background-color: #00246B;
+}
+.checkbox--color-navy input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #00246B;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.checkbox--color-yellow input[type=checkbox] {
+  background-color: #FED533;
+}
+.checkbox--color-yellow input[type=checkbox]:checked::after {
+  opacity: 1;
+  display: block;
+  background: #FED533;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .range {
   display: flex;
   justify-content: flex-end;
@@ -377,6 +486,8 @@
   font-family: roboto;
   width: 243px;
   border-radius: 3px;
+  padding: 5px;
+  border-color: 2px solid var(--color-secondary);
 }
 
 .group-button {
@@ -553,6 +664,89 @@
   padding-bottom: 10px;
   display: block;
   padding-top: 30px;
+}
+
+.success-order {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 300px;
+}
+
+.section_title-success {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.btn-success {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.btn_view-order {
+  width: 198px;
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.btn_continue-order {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.input {
+  max-width: 381px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.0392156863);
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #001f3f;
+  font-size: 13px;
+  transition: border-color 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s, color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s, background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: rgba(5, 6, 15, 0.7607843137);
+}
+
+.input-group {
+  padding-top: 10px;
+}
+
+.title {
+  padding-top: 130px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 384px;
 }
 
 * {
